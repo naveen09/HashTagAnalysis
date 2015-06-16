@@ -32,7 +32,15 @@ grunt serve
 * bower 1.4.1
 
 
+###Note:
+This is purely non-commercial work which I`ve done for my self to understand how sentiment analysis works with Twitter API.
+
+
 ### Licence
+
+```
+Before taking this, check license with Highcharts license terms, as this contains the js files from Highcharts library.
+```
 
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this work except in compliance with the License.
