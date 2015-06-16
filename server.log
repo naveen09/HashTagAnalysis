@@ -1,0 +1,38 @@
+[4mRunning "serve" task[24m
+
+[4mRunning "clean:server" (clean) task[24m
+
+[4mRunning "env:all" (env) task[24m
+
+[4mRunning "concurrent:server" (concurrent) task[24m
+
+[4mRunning "injector:scripts" (injector) task[24m
+[90mMissing option `template`, using `dest` as template instead[39m
+Injecting [32mjs[39m files [90m(3 files)[39m
+[32m>> [39mNothing changed
+
+[4mRunning "injector:css" (injector) task[24m
+[90mMissing option `template`, using `dest` as template instead[39m
+Injecting [32mcss[39m files [90m(2 files)[39m
+[32m>> [39mNothing changed
+
+[4mRunning "wiredep:target" (wiredep) task[24m
+
+[4mRunning "autoprefixer:dist" (autoprefixer) task[24m
+
+[4mRunning "express:dev" (express) task[24m
+[36mStarting [39mbackground Express server
+Express server listening on 9000, in development mode
+
+[4mRunning "wait" task[24m
+[32m>> [39mWaiting for server reload...
+Done waiting!
+
+[4mRunning "open:server" (open) task[24m
+
+[4mRunning "watch" task[24m
+Waiting...
+Tracking phrase:	 #Hyderabad
+
+
+Execution Time (2015-06-10 09:53:39 UTC)

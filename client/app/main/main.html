@@ -1,0 +1,32 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container" ng-controller="MainCtrl as mainCtrl">
+    <center><img ng-src="{{mainCtrl.loading}}" ng-show="mainCtrl.showLoading" alt="loading..." /></center>
+    <form role="form" id="search" class="filter-parent" ng-submit="mainCtrl.search()">
+        <div class="form-group">
+            <label for="filter-by">
+                <i class="fa fa-search"></i>
+            </label>
+
+            <div style="position: relative; height: 46px; display: block;">
+                <input class="form-control input-lg search-input" id="filter-by" placeholder="Search HashTags" ng-model="mainCtrl.searchInput">
+            </div>
+        </div>
+        <a type="submit" class="fa fa-times" id="filter-clear" ng-click="mainCtrl.clearSearch()" href="#"></a>
+        <center>
+            <button class="btn btn-warning" style="margin-bottom:10px;" type="submit"><i class="fa fa-search"></i> Search</button>
+        </center>
+    </form>
+    <div class="well" ng-show="mainCtrl.searchInput!=''">Tracking for hashtag : #{{mainCtrl.searchInput}} &nbsp;&nbsp;&nbsp;
+        <img ng-src="{{mainCtrl.imageSrc}}" width="32px" height="32px" alt="{{mainCtrl.imageDesc}}" title="{{mainCtrl.imageDesc}}" />
+    </div>
+    <hr>
+    <chart class="container" data='mainCtrl.chartData'>
+    </chart>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <center>Built using AngularJS & Twitter API</center>
+    </div>
+</footer>
